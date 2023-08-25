@@ -1,0 +1,376 @@
+/* Style for a fixed navigation bar */
+.fixed-nav {
+  /* Fixed position at the top of the viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+/* Content padding to prevent overlap with fixed navigation */
+.content {
+  padding-top: 65px;
+}
+
+/* Style for clickable location element */
+.location {
+  cursor: pointer;
+}
+
+/* Location title styles */
+.location > h5 {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+/* Location description styles */
+.location > p {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Vertical line separator */
+.vertical-line {
+  height: 50px;
+  border-left: 1px solid #2f2f2f;
+}
+
+/* Styling for search bar */
+.search-div {
+  padding: 0px 12px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 12px;
+  background: rgb(248, 248, 248);
+  color: rgb(130, 130, 130);
+}
+
+/* Search input field styles */
+.search-div > input {
+  border: none;
+  background-color: transparent;
+  width: 40vw;
+  height: 45px;
+}
+
+/* Placeholder text styles */
+::placeholder {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+}
+
+/* Cart icon styling */
+.my-cart {
+  background-color: #0d8316 !important;
+  font-size: 14px !important;
+}
+
+/* Container for various content */
+.my-container {
+  margin: auto;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+/* Horizontal scrolling list */
+.my-list {
+  width: 100%;
+  white-space: nowrap;
+}
+.my-list > img {
+  padding-right: 20px;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles for categories section */
+.my-categories {
+  width: 100%;
+  /* display: grid;
+    grid-template-columns: repeat(10, 1fr); */
+}
+
+/* Styling for categories-section */
+.categories-section {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Header of a section */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* "See All" link in section header */
+.see-all > a {
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+  color: rgb(12, 131, 31);
+}
+
+/* Heading style */
+.heading-1 {
+  color: rgb(28, 28, 28);
+  font-size: 24px;
+  font-weight: 600;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+/* Horizontal scrolling row for categories */
+.categories-section-row {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+/* Styling for individual product card */
+.my-card {
+  width: 179px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+/* Styling for time indicator in the product card */
+.my-card-time {
+  width: fit-content;
+  height: 10px;
+  border-radius: 4px;
+  background-color: rgb(248, 248, 248);
+  padding: 0px 4px;
+  font-weight: 700;
+  font-size: 9px;
+  color: rgb(54, 54, 54);
+}
+
+/* Styling for product title in the product card */
+.my-card-title {
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  font-size: 13px;
+  /* Allow content to wrap */
+  display: block;
+  /* Hide any overflow */
+  overflow: hidden;
+  /* Prevent normal line breaks */
+  white-space: nowrap;
+  /* Add ellipsis for overflow */
+  text-overflow: ellipsis;
+  /* Prevent content from affecting parent's size */
+  width: 100%;
+}
+
+/* Styling for product weight/description in the product card */
+.my-card-weight {
+  color: #666666;
+  font-size: 13px;
+}
+
+/* Styling for price and MRPs in the product card */
+.price-mrp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+/* Styling for price in the product card */
+.card-price {
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+}
+
+/* Styling for MRPs in the product card */
+.mrp {
+  color: rgb(130, 130, 130);
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration-line: line-through;
+}
+
+/* Styling for discount badge */
+.discount {
+  align-items: center;
+  display: flex;
+  left: 0.75rem;
+  top: 0px;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Styling for discount percentage */
+.discount-off {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 9px;
+  text-align: center;
+  z-index: 20;
+  position: absolute;
+}
+
+/* Footer styling */
+.my-footer {
+  margin: auto;
+}
+
+/* Styling for footer text */
+.footer-3 {
+  text-align: justify;
+  color: rgb(102, 102, 102);
+  line-height: 18px;
+  margin: 12px;
+}
+
+/* Styling for middle section of the footer */
+.footer-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  width: auto;
+  background-color: rgb(252, 252, 252);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for text content in the footer */
+.footer-2 > p {
+  text-align: justify;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  width: 35%;
+}
+
+/* Styling for download section text */
+.download-section > p {
+  color: #666666;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 16px;
+}
+
+/* Styling for download buttons */
+.download-btns {
+  background-color: #213b50;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+  padding: 10px;
+}
+
+/* Styling for social media icons */
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-inline: 10px;
+}
+
+.social {
+  display: flex;
+}
+
+.social-btn {
+  cursor: pointer;
+}
+
+/* Styling for the first section of the footer */
+.footer-1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for useful links section in the footer */
+.useful-links {
+  flex: 2;
+}
+
+/* Styling for categories links section in the footer */
+.categories-links {
+  flex: 3;
+}
+
+/* Styling for table elements */
+table {
+  width: 100%;
+}
+
+/* Styling for table data cells */
+td {
+  padding: 3px 10px;
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  nav,
+  .footer-2,
+  .footer-1 {
+    flex-direction: column !important;
+  }
+
+  /* Hide specific elements on smaller screens */
+  .vertical-line,
+  .hero-section > img {
+    display: none !important;
+  }
+
+  /* Adjust content padding for smaller screens */
+  .content {
+    padding-top: 230px;
+  }
+
+  /* Adjust width for navigation buttons and footer text */
+  .nav-btns,
+  .footer-2 > p,
+  .search-div {
+    width: 90%;
+  }
+
+  /* Adjust margins for certain elements on smaller screens */
+  .footer-1 > div,
+  .my-container {
+    margin-top: 20px;
+  }
+
+  /* Center-align headings in the footer */
+  .footer-1 > div > h2,
+  .footer-1 > div > h4 {
+    text-align: center;
+  }
+
+  /* Center-align table cell content */
+  td {
+    text-align: center;
+  }
+
+  /* Adjust margin for social media icons */
+  .social {
+    margin-top: 10px;
+  }
+}
