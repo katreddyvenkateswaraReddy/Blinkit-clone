@@ -17,7 +17,7 @@ Live-Demo:[Spotify-Clone](https://katreddyvenkateswarareddy.github.io/Blinkit-cl
 ## Features
 
 - Responsive design that adapts to screen.
-- Replicates key features of the Spotify web player, such as the navigation bar, playlist layout, and player controls.
+- Replicates key features of the Blinkit website, such as the navigation bar, cards layout, and footer.
 - Uses semantic HTML elements for better accessibility and SEO.
 - Custom CSS styling without relying on external libraries.
 
@@ -25,6 +25,7 @@ Live-Demo:[Spotify-Clone](https://katreddyvenkateswarareddy.github.io/Blinkit-cl
 
 - HTML
 - CSS
+- Bootstrap
 
 ## Getting Started
 
